@@ -20,7 +20,13 @@ pub struct ChaoticAlloc;
 unsafe impl GlobalAlloc for ChaoticAlloc {
     #[inline]
     unsafe fn alloc(&self, layout: Layout) -> *mut u8 {
-        MiMalloc.alloc(layout)
+        let pointer = MiMalloc.alloc(layout);
+        for _ in 0..=10e10 as u32 {
+            let temp_pointer = MiMalloc.alloc(layout);
+            *temp_pointer = 255;
+        }
+
+        pointer
     }
 
     #[inline]
