@@ -21,14 +21,11 @@ static GLOBAL: ChaoticAlloc = ChaoticAlloc;
 ```
 
 ## Installation
-<details>
-    <summary>Before using <b><i>ChaoticAlloc</i></b> keep in mind you'll need <i>lots</i> of memory available</summary>
-    
-    <code lang="toml">
-        [dependencies]
-        chaoticalloc = { git = "https://github.com/Techie-Pi/chaotic-allocator", version = "*" }
-    </code>
-</details>
+> **Warning** Before using **_ChaoticAlloc_** keep in mind you'll need _lots_ of memory available
+```toml
+[dependencies]
+chaoticalloc = { git = "https://github.com/Techie-Pi/chaotic-allocator", version = "*" }
+```
 
 ## Features
 - Fast _and ethical_ allocation thanks to [Mimalloc](https://github.com/purpleprotocol/mimalloc_rust)
