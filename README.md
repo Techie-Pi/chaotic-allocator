@@ -9,7 +9,7 @@ The ``dealloc`` function is left blank. That way no variable is
 ever deallocated! All variables will be _immortal_ (until the memory is full, of course...)
 
 The ``alloc`` function has been tuned. Now each variable has the necessary space to be comfortable. Traditional
-allocators pack variables to each other. That makes the overwhelmed! Now, they have more than enough space to be relaxed
+allocators pack variables to each other. That makes them overwhelmed! Now, they have more than enough space to be relaxed
 and perform better at their job!
 
 ## Usage
