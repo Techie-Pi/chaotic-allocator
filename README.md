@@ -17,10 +17,11 @@ static GLOBAL: ChaoticAlloc = ChaoticAlloc;
 ## Installation
 <details>
 <summary>Before using <b><i>ChaoticAlloc</i></b> keep in mind you'll need <i>lots</i> of memory available</summary>
-    <code>
+    ```toml
+    
     [dependencies]
     chaoticalloc = { git = "https://github.com/Techie-Pi/chaotic-allocator", version = "*" }
-    </code>
+    ```
 </details>
 
 ## Features
